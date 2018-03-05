@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Repository</title>
+</head>
+<body>
+	<p>Display some text when the checkbox is checked:</p>
+	<form action="">
+		Checkbox: <input type="checkbox" id="mycheck" onclick="myfunction()">
+		<p id="text" style="display:none">Checkbox is CHECKED!</p>
+	</form>
+
+	<script type='text/javascript'>
+		function myfunction(){
+			var checkBox = document.getElementById('mycheck');
+			if(checkBox.checked==true){
+				text.style.display='block';
+			}
+			else
+			{
+				text.style.display='none';
+			}
+		}
+	</script>
+</body>
+</html>
